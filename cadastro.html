@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/cadastro_style.css" rel="stylesheet">
+    <link rel="icon" href="./assets/images/icone.png" type="image/png">
+    <link rel="shortcut icon" href="./assets/images/icone.png" type="image/x-icon">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="bloco-cadastro">
+        <h1 id="texto-cadastre-se">Cadastre-se gratuitamente</h1>
+        <form action="/submit-form" method="post">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="data">Data de nascimento:</label>
+            <input type="date" id="nome" name="data" required><br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="nome" name="telefone" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="Entrar">
+        </form>
+        
+    </div>
+    <div class="icone">
+        <img id="gif-animada" src="./assets/images/mobile-login-animate.svg" alt="" width="100vw">
+    </div>
+</body>
+</html>

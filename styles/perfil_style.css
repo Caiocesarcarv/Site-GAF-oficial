@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@589&display=swap');
+body{
+    font-family: "Oswald", sans-serif;
+    background-color: #080414;
+    background-image: url(../assets/images/3409297.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+
+}
+
+#bloco-menu {
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+}
+
+#menu-barra {
+    width: 100%;
+    height: 25px;
+    margin-top: 30px;
+    background-color: rgba(0, 32, 53, 0.562);
+    backdrop-filter: blur(10px);
+    padding: 20px; 
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.botão-menu{
+    cursor: pointer;
+    font-family: "Oswald", sans-serif;
+    background-color: #e7181800;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    position: relative; 
+}
+
+.botão-menu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: white; 
+    transform: scaleX(0);
+    transform-origin: bottom right; 
+    transition: transform 0.5s ease; 
+}
+
+.botão-menu:hover::after {
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
+}
+
+.botão-menu:hover #tooltip-d {
+    visibility: visible;
+    opacity: 1;
+}
+.botão-menu:hover #tooltip-m {
+    visibility: visible;
+    opacity: 1;
+}
+.botão-menu:hover #tooltip-s {
+    visibility: visible;
+    opacity: 1;
+}
+.botão-menu:hover #tooltip-sim {
+    visibility: visible;
+    opacity: 1;
+}
+.botão-menu:hover #tooltip-ar {
+    visibility: visible;
+    opacity: 1;
+}
+.botão-menu:hover #tooltip-me {
+    visibility: visible;
+    opacity: 1;
+}
+#tooltip-d {
+    visibility: hidden;
+    opacity: 0;
+    background: linear-gradient(180deg, #00d471, #0073d4);
+    color: #fff;
+    text-align: left; /* Alinha o texto à esquerda */
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: -230px; /* Ajuste a posição conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+    width: 200px;   
+}
+#text-d{
+    margin: 0;
+    margin-left: 10px;
+}
+#list-dados{
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#tooltip-d::after {
+    content: "";
+    position: absolute;
+    bottom: 100%; /* Ajusta a posição da seta */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #00d471  transparent; 
+}
+#tooltip-m {
+    visibility: hidden;
+    opacity: 0;
+    background: linear-gradient(180deg, #00d471, #0073d4);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: -220px; 
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+    width: 180px;
+}
+#tooltip-m::after {
+    content: "";
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #00d471  transparent; 
+}
+#text-m{
+    text-align: left;
+    margin: 0;
+}
+#tooltip-s {
+    visibility: hidden;
+    opacity: 0;
+    background: linear-gradient(180deg, #00d471, #0073d4);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: -132px; 
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+    width: 200px;
+}
+#tooltip-s::after {
+    content: "";
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #00d471  transparent; 
+}
+#text-s{
+    margin: 0;
+    text-align: left;
+}
+
+#tooltip-sim {
+    visibility: hidden;
+    opacity: 0;
+    background: linear-gradient(180deg, #00d471, #0073d4);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: -181px; 
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+    width: 190px;
+}
+#tooltip-sim::after {
+    content: "";
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #00d471  transparent; 
+}
+#text-sim{
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+}
+#list-sim{
+    margin: 0;
+    text-align: left;
+}
+#tooltip-ar {
+    visibility: hidden;
+    opacity: 0;
+    background: linear-gradient(180deg, #00d471, #0073d4);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: -189px; 
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+    width: 200px;
+
+}
+#tooltip-ar::after {
+    content: "";
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #00d471  transparent; 
+}
+#text-ar{
+    margin: 0;
+    margin-left: 10px;
+    text-align: left;
+}
+#list-ar{
+    margin: 0;
+    margin-bottom: 8px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+#tooltip-me {
+    visibility: hidden;
+    opacity: 0;
+    background: linear-gradient(180deg, #00d471, #0073d4);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: -277px; 
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+    width: 200px;
+}
+#tooltip-me::after{
+    content: "";
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #00d471  transparent; 
+}
+#text-me{
+    margin: 0;
+    margin-left: 10px;
+    text-align: left;
+}
+#list-me{
+    margin: 0;
+    margin-bottom: 8px;
+    margin-right: 10px;
+    text-align: left;
+}

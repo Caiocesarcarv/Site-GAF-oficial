@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@589&display=swap');
+
+body {
+    font-family: "Oswald", sans-serif;
+    background-color: #080414;
+    background-image: url(../assets/images/3409297.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco-geral {
+    width: 70vw;
+    height: 70vh;
+    backdrop-filter: blur(7px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.747);
+}
+
+#gif-animada {
+    padding: 0 5%;
+}
+
+.bloco-login {
+    width: 40%;
+    flex-direction: column;
+    background: linear-gradient(90deg, #205253af, #05506c);
+    padding: 5%;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-entrar {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+
+#text-conecte {
+    background: linear-gradient(90deg, #00d471, #0073d4);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4vw;
+    margin: 0;
+    margin-top: -10%;
+    text-align: center;
+}
+
+.senha-email {
+    color: #00d471;
+    text-shadow: 0px 0px 5px #5affb2;
+    padding: 2% 0;
+    font-size: 1.8em;
+}
+
+#botão-entrar {
+    font-family: "Oswald", sans-serif;
+    color: #042842;
+    background: linear-gradient(90deg, #00d471, #0073d4);
+    margin-top: 15%;
+    padding: 1vw 2vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#botão-entrar:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.459);
+}
+
+.email-senha-input {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.712);
+    outline: none;
+    color: #b2e4cb;
+    font-size: 1em;
+    padding: 15px;
+    padding-right: 35px; 
+    box-sizing: border-box; 
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #24343c;    
+}
+
+.email-senha-input::placeholder {
+    color: #738e8c;
+}
+
+#icone-person, #icone-lock {
+    background-color: #24343c;
+    padding: 5px 0;
+    position: absolute;
+}
+
+#icone-person {
+    top: 24.5vh;
+    left: 64.6vw;   
+
+}
+
+#icone-lock {
+    top: 38.5vh;
+    left: 64.6vw;
+}
+
+.clique-aqui {
+    color: #b2e4cb;
+    margin-top: 5%;
+    margin-bottom: -40px;
+}
+
+a {
+    color: #f6fffb;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #008cff;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .bloco-geral {
+        width: 80vw;
+        height: 80vh;
+    }
+    .bloco-login {
+        width: 50%;
+        padding: 8%;
+    }
+}
+
+@media (max-width: 800px) {
+    .bloco-geral {
+        width: 90vw;
+        height: 90vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bloco-login {
+        width: 90%;
+        padding: 10%;
+    }
+    #text-conecte {
+        font-size: 6vw;
+    }
+    .senha-email, #botão-entrar {
+        font-size: 1.2em;
+    }
+}
